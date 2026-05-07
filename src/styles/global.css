@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme inline {
+  --breakpoint-xs: 27.5rem;
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-ibm);
+
+  --color-primary: rgba(31,77,143,1);
+  --color-accent: rgba(224,118,95,1);
+  --color-accent-mix-1: rgba(190,100,110,1);
+  --color-accent-mix-2: rgba(105,86,136,1);
+
+}

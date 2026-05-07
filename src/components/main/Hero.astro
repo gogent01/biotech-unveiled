@@ -1,0 +1,159 @@
+---
+import raLogo from "../../assets/logos/ra.png";
+import nplbLogo from "../../assets/logos/nplb.png";
+import oxfordLogo from "../../assets/logos/oxford.png";
+import uclLogo from "../../assets/logos/ucl.png";
+import imperialLogo from "../../assets/logos/imperial.png";
+import usLogo from "../../assets/logos/us.png";
+
+import spiralImage from "../../assets/spiral.svg";
+
+import computerIcon from "../../assets/icons/computer.svg";
+import clockIcon from "../../assets/icons/clock.svg";
+import certificateIcon from "../../assets/icons/certificate.svg";
+---
+
+<div class="mx-auto max-w-lg p-4">
+  <div class="xs:gap-1.5 xs:h-6 flex h-5 items-center justify-end gap-0.5">
+    <img
+      src={raLogo.src}
+      width={raLogo.width}
+      height={raLogo.height}
+      alt="RA Capital"
+      class="h-full flex-0"
+    />
+    <img
+      src={nplbLogo.src}
+      width={nplbLogo.width}
+      height={nplbLogo.height}
+      alt="NPLB"
+      class="h-full flex-0"
+    />
+    <img
+      src={oxfordLogo.src}
+      width={oxfordLogo.width}
+      height={oxfordLogo.height}
+      alt="University of Oxford"
+      class="h-full flex-0"
+    />
+    <img
+      src={uclLogo.src}
+      width={uclLogo.width}
+      height={uclLogo.height}
+      alt="Univercity College London"
+      class="h-full flex-0"
+    />
+    <img
+      src={imperialLogo.src}
+      width={imperialLogo.width}
+      height={imperialLogo.height}
+      alt="Imperial College"
+      class="h-full flex-0"
+    />
+    <img
+      src={usLogo.src}
+      width={usLogo.width}
+      height={usLogo.height}
+      alt="University of Southampton"
+      class="h-full flex-0"
+    />
+  </div>
+
+  <div
+    class="absolute top-46 -left-24"
+    style="width: 18.5rem; transform: rotate(-70.07deg); transform-origin: top left;"
+  >
+    <img
+      src={spiralImage.src}
+      width={spiralImage.width}
+      height={spiralImage.height}
+      alt=""
+    />
+  </div>
+
+  <div class="relative max-w-min">
+    <div
+      class="absolute -top-24 -right-9 flex items-center justify-center bg-[url(/blob.svg)] bg-contain bg-no-repeat"
+      style="height: 6.25rem; width: 6.25rem;"
+    >
+      <p
+        class="font-display -mt-1.5 text-center leading-tight font-bold text-white"
+      >
+        A step to the NPLB Fellowship
+      </p>
+    </div>
+
+    <h1
+      class="font-display tech-gradient mt-38 -ml-px bg-clip-text text-7xl font-bold text-transparent"
+      style="line-height: 92%; letter-spacing: -2%;"
+    >
+      Biotech Unveiled
+    </h1>
+  </div>
+
+  <h2 class="font-display mt-6 mb-0.5 font-medium" style="line-height: 145%;">
+    A course by RA Capital and No Patient Left Behind about how medicines can be
+    both affordable for patients and profitable to develop
+  </h2>
+
+  <a
+    href="https://racap.thinkific.com/courses/biotechunveiled?utm_source=BucketChallenge&utm_medium=BucketChallenge&utm_campaign=Team2"
+    class="font-display bg-accent hover:bg-accent-mix-1 mt-3 inline-block rounded px-5 pt-1.5 pb-2 text-xl font-medium text-white transition-colors"
+    style="letter-spacing: -0.4%"
+  >
+    Join the course
+  </a>
+
+  <div class="mt-14 flex items-center justify-center gap-6">
+    <div class="flex flex-col items-center justify-center gap-3">
+      <img
+        src={computerIcon.src}
+        width={computerIcon.width}
+        height={computerIcon.height}
+        alt=""
+        class="h-6"
+      />
+      <p class="font-display text-primary text-center text-sm uppercase">
+        Self-paced<br />and online
+      </p>
+    </div>
+
+    <div class="flex flex-col items-center justify-center gap-3">
+      <img
+        src={clockIcon.src}
+        width={clockIcon.width}
+        height={clockIcon.height}
+        alt=""
+        class="h-6"
+      />
+      <p class="font-display text-primary text-center text-sm uppercase">
+        6-10 hours<br />duration
+      </p>
+    </div>
+
+    <div class="flex flex-col items-center justify-center gap-3">
+      <img
+        src={certificateIcon.src}
+        width={certificateIcon.width}
+        height={certificateIcon.height}
+        alt=""
+        class="h-6"
+      />
+      <p class="font-display text-primary text-center text-sm uppercase">
+        Reputable<br />certificate
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .tech-gradient {
+    background-image: radial-gradient(
+      at 5% 90%,
+      var(--color-accent) 0%,
+      var(--color-accent-mix-1) 10%,
+      var(--color-accent-mix-2) 25%,
+      var(--color-primary) 75%
+    );
+  }
+</style>
