@@ -1,32 +1,47 @@
-<div class="tech-gradient mt-16">
-  <div class="mx-auto max-w-md p-4 text-pretty text-white">
-    <h2
-      class="font-display pb-1 text-3xl font-bold"
-      style="line-height: 110%; letter-spacing: -2%;"
-    >
-      Ready to understand biotech as a system?
-    </h2>
+---
+import spiralImage from "../../assets/spiral.svg";
+---
 
-    <h3>Step 1</h3>
-    <p>Take the free course.</p>
+<div class="tech-gradient relative mt-32 overflow-hidden">
+  <div
+    class="absolute -top-76 -left-180 hidden mix-blend-color-dodge lg:block"
+    style="width: 40rem; transform: rotate(-64.07deg) scale(0.9, 1); transform-origin: top left;"
+  >
+    <img src={spiralImage.src} alt="" class="w-full -scale-100" />
+  </div>
 
-    <h3>Step 2</h3>
-    <p>Complete it and earn the certificate.</p>
-
-    <h3>Step 3</h3>
-    <p>
-      Use it as your bridge to the NPLB Biotech Fellowship. <em
-        class="text-accent-light not-italic">Application deadline: May 26</em
+  <div
+    class="relative mx-auto max-w-md p-4 pt-6 pb-8 text-pretty text-white lg:grid lg:max-w-360 lg:grid-cols-7 lg:gap-8 lg:px-16 lg:py-14 lg:pb-24"
+  >
+    <div class="lg:col-span-3 lg:col-start-3">
+      <h2
+        class="font-display pb-1 text-3xl font-bold lg:pb-30 lg:text-5xl"
+        style="line-height: 110%; letter-spacing: -2%;"
       >
-    </p>
+        Ready to understand biotech as a system?
+      </h2>
 
-    <a
-      href="https://racap.thinkific.com/courses/biotechunveiled?utm_source=BucketChallenge&utm_medium=BucketChallenge&utm_campaign=Team2"
-      class="font-display bg-accent hover:bg-accent-mix-1 mt-9 inline-block rounded px-5 pt-1.5 pb-2 text-xl font-medium text-white transition-colors"
-      style="letter-spacing: -0.4%"
-    >
-      Join the course
-    </a>
+      <h3>Step 1</h3>
+      <p>Take the free course.</p>
+
+      <h3>Step 2</h3>
+      <p>Complete it and earn the certificate.</p>
+
+      <h3>Step 3</h3>
+      <p>
+        Use it as your bridge to the NPLB Biotech Fellowship. <em
+          class="text-accent-light not-italic">Application deadline: May 26</em
+        >
+      </p>
+
+      <a
+        href="https://racap.thinkific.com/courses/biotechunveiled?utm_source=BucketChallenge&utm_medium=BucketChallenge&utm_campaign=Team2"
+        class="font-display bg-accent hover:bg-accent-mix-1 mt-10 inline-block rounded px-5 pt-1.5 pb-2 text-xl font-medium text-white transition-colors lg:mt-12 lg:text-3xl"
+        style="letter-spacing: -0.4%"
+      >
+        Join the course
+      </a>
+    </div>
   </div>
 </div>
 
@@ -35,7 +50,7 @@
 
   .tech-gradient {
     background-image: radial-gradient(
-      at 110% 10%,
+      at 110% 7.5%,
       var(--color-accent) 0%,
       var(--color-accent-mix-1) 10%,
       var(--color-accent-mix-2) 25%,
@@ -43,15 +58,27 @@
     );
   }
 
+  @media screen and (min-width: 64rem) {
+    .tech-gradient {
+      background-image: radial-gradient(
+        at 80% 0%,
+        var(--color-accent) 0%,
+        var(--color-accent-mix-1) 7.5%,
+        var(--color-accent-mix-2) 35%,
+        var(--color-primary) 80%
+      );
+    }
+  }
+
   h3 {
-    @apply font-display text-xl font-bold;
-    margin-top: 1.125rem;
+    @apply font-display text-xl font-bold lg:text-3xl;
+    margin-top: 1.75rem;
     line-height: 92%;
     letter-spacing: -2%;
   }
 
   p {
-    @apply mt-1;
+    @apply mt-1 lg:mt-3 lg:text-2xl;
     line-height: 135%;
     letter-spacing: -2%;
   }
