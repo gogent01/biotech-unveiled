@@ -1,0 +1,29 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<p
+  class:list={[
+    "font-display text-primary text-center text-sm text-pretty uppercase lg:text-2xl",
+    className,
+  ]}
+>
+  <slot />
+</p>
+
+<style>
+  p {
+    line-height: 160%;
+    letter-spacing: 4%;
+  }
+
+  @media screen and (min-width: 64rem) {
+    p {
+      letter-spacing: 6%;
+    }
+  }
+</style>

@@ -1,0 +1,104 @@
+---
+import Callout from "../atoms/Callout.astro";
+import nplbFellowshipLogo from "../../assets/logos/nplb-fellowship.png";
+---
+
+<div
+  class="mx-auto mt-11 max-w-md p-4 lg:mt-28 lg:grid lg:max-w-360 lg:grid-cols-7 lg:gap-x-8 lg:px-15 lg:py-6"
+>
+  <h2
+    class="font-display text-primary text-xl font-bold lg:col-span-2 lg:text-4xl"
+    style="line-height: 92%"
+  >
+    What will I get?
+  </h2>
+
+  <ul
+    class="mt-4 ml-4 list-outside list-disc list-image-[url(/bullit.svg)] space-y-4 text-pretty lg:col-span-4 lg:mt-0 lg:ml-5 lg:list-image-[url(/bullit-large.svg)] lg:space-y-6 lg:text-2xl"
+  >
+    <li>
+      A solid understanding in how the biotech ecosystem works in the modern
+      world
+    </li>
+    <li>A reputable certificate of completion from RA Capital</li>
+    <li>
+      An opportunity to apply for <a
+        href="https://www.nopatientleftbehind.org/nplb-fellowship"
+        target="_blank"
+        class="underline underline-offset-2 transition-colors hover:decoration-transparent"
+        style="text-decoration-thickness: 0.5px">the NPLB Biotech Fellowship</a
+      > — <em class="text-accent not-italic"
+        >the certificate of completion is a prerequisite for enrollment</em
+      >
+    </li>
+  </ul>
+
+  <div
+    class="border-border relative mt-9 rounded-sm border-2 p-3.5 pb-6 lg:col-span-4 lg:col-start-3 lg:mt-25 lg:p-7 lg:pb-10"
+  >
+    <img
+      src={nplbFellowshipLogo.src}
+      width={nplbFellowshipLogo.width}
+      height={nplbFellowshipLogo.height}
+      alt="NPLB Fellowship"
+      class="absolute -top-11 -right-3 w-28 lg:-top-17 lg:-right-4 lg:w-44"
+    />
+
+    <h3
+      class="font-display text-primary font-bold lg:text-2xl"
+      style="line-height: 110%;"
+    >
+      About NPLB Fellowship
+    </h3>
+
+    <ul
+      class="mt-6 ml-4 list-outside list-image-[url(/check-large.svg)] space-y-2.5 text-pretty lg:mt-9 lg:ml-6 lg:space-y-6 lg:text-2xl"
+    >
+      <li>
+        A joint NPLB and RA Capital 3-months intensive live program for the
+        future biotech leaders
+      </li>
+      <li>
+        Eligible for everyone interested in Biotech industry and completed
+        the Biotech Unveiled course
+      </li>
+      <li>
+        Live sessions with experts from the biotech industry on investments,
+        R&D, pricing, policy and much more
+      </li>
+      <li>Mentoring from leadership of RA Capital and NPLB</li>
+      <li>Group projects with a team of alike individuals</li>
+      <li>Global Network across US, UK, Europe and beyond</li>
+    </ul>
+  </div>
+
+  <div class="lg:col-span-3 lg:col-start-3 lg:mt-12">
+    <Callout class="mt-10"
+      >Fellowship application deadline:<br />26th of May 2026
+    </Callout>
+
+    <div class="mt-3 flex w-full flex-col items-center gap-3 lg:mt-2 lg:gap-5">
+      <a
+        href="https://racap.thinkific.com/courses/biotechunveiled?utm_source=BucketChallenge&utm_medium=BucketChallenge&utm_campaign=Team2"
+        class="font-display bg-accent hover:bg-accent-mix-1 mt-3 inline-block rounded px-5 pt-1.5 pb-2 text-xl font-medium text-white transition-colors lg:mt-6 lg:text-3xl"
+        style="letter-spacing: -0.4%"
+      >
+        Start learning
+      </a>
+
+      <a
+        href="https://www.nopatientleftbehind.org/nplb-fellowship"
+        target="_blank"
+        class="text-xs underline underline-offset-2 transition-colors hover:decoration-transparent lg:text-base"
+        style="text-decoration-thickness: 0.5px; line-height: 135%;"
+        >NPLB Fellowship website</a
+      >
+    </div>
+  </div>
+</div>
+
+<style>
+  li {
+    line-height: 135%;
+  }
+</style>

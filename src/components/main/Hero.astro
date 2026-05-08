@@ -1,68 +1,18 @@
 ---
-import raLogo from "../../assets/logos/ra.png";
-import nplbLogo from "../../assets/logos/nplb.png";
-import oxfordLogo from "../../assets/logos/oxford.png";
-import uclLogo from "../../assets/logos/ucl.png";
-import imperialLogo from "../../assets/logos/imperial.png";
-import usLogo from "../../assets/logos/us.png";
-
 import spiralImage from "../../assets/spiral.svg";
 
 import computerIcon from "../../assets/icons/computer.svg";
 import clockIcon from "../../assets/icons/clock.svg";
 import certificateIcon from "../../assets/icons/certificate.svg";
+
+import Partners from "../molecules/Partners.astro";
 ---
 
 <div class="relative overflow-hidden">
   <div
     class="mx-auto max-w-md overflow-y-hidden p-4 lg:max-w-360 lg:px-16 lg:py-6 lg:pb-28"
   >
-    <div
-      class="xs:gap-2 xs:h-6 flex h-5 items-center justify-between gap-1 lg:h-10 lg:justify-end"
-    >
-      <img
-        src={raLogo.src}
-        width={raLogo.width}
-        height={raLogo.height}
-        alt="RA Capital"
-        class="h-full flex-0"
-      />
-      <img
-        src={nplbLogo.src}
-        width={nplbLogo.width}
-        height={nplbLogo.height}
-        alt="NPLB"
-        class="h-full flex-0"
-      />
-      <img
-        src={oxfordLogo.src}
-        width={oxfordLogo.width}
-        height={oxfordLogo.height}
-        alt="University of Oxford"
-        class="h-full flex-0"
-      />
-      <img
-        src={uclLogo.src}
-        width={uclLogo.width}
-        height={uclLogo.height}
-        alt="Univercity College London"
-        class="h-full flex-0"
-      />
-      <img
-        src={imperialLogo.src}
-        width={imperialLogo.width}
-        height={imperialLogo.height}
-        alt="Imperial College"
-        class="h-full flex-0"
-      />
-      <img
-        src={usLogo.src}
-        width={usLogo.width}
-        height={usLogo.height}
-        alt="University of Southampton"
-        class="h-full flex-0"
-      />
-    </div>
+    <Partners />
 
     <div
       class="pointer-events-none absolute top-46 -left-24 lg:hidden"
@@ -135,7 +85,7 @@ import certificateIcon from "../../assets/icons/certificate.svg";
     </a>
 
     <div
-      class="mt-14 flex items-center justify-center gap-6 lg:mt-24 lg:gap-16"
+      class="mt-14 flex items-center justify-center gap-5 lg:mt-20 lg:gap-16"
     >
       <div class="flex flex-col items-center justify-center gap-3 lg:gap-6">
         <img src={computerIcon.src} alt="" class="h-6 lg:h-13" />
