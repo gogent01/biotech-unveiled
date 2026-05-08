@@ -1,0 +1,103 @@
+---
+import Link from "../atoms/Link.astro";
+---
+
+<footer
+  class="mx-auto mt-10 max-w-md p-4 lg:mt-48 lg:max-w-none lg:px-15 lg:py-6"
+>
+  <h2 id="contacts" class="text-sm font-bold lg:text-2xl">Contacts</h2>
+
+  <dl class="mt-3 space-y-1 text-sm lg:text-2xl">
+    <div class="lg:flex lg:items-baseline lg:gap-2">
+      <dt>Daur Meretukov</dt>
+      <dd>
+        <Link href="mailto:daur.meretukov@wolf.ox.ac.uk"
+          >daur.meretukov@wolf.ox.ac.uk</Link
+        >
+      </dd>
+    </div>
+
+    <div class="lg:flex lg:items-baseline lg:gap-2">
+      <dt>Zohar Preminger</dt>
+      <dd>
+        <Link href="mailto:zohar.preminger.22@ucl.ac.uk"
+          >zohar.preminger.22@ucl.ac.uk</Link
+        >
+      </dd>
+    </div>
+
+    <div class="lg:flex lg:items-baseline lg:gap-2">
+      <dt>Celine Shin</dt>
+      <dd>
+        <Link href="mailto:cel.shin01@gmail.com">cel.shin01@gmail.com</Link>
+      </dd>
+    </div>
+
+    <div class="lg:flex lg:items-baseline lg:gap-2">
+      <dt>Yushi Li</dt>
+      <dd>
+        <Link href="mailto:yushi.li@new.ox.ac.uk">yushi.li@new.ox.ac.uk</Link>
+      </dd>
+    </div>
+
+    <div class="lg:flex lg:items-baseline lg:gap-2">
+      <dt>Weronika Biala</dt>
+      <dd>
+        <Link href="mailto:w.biala@soton.ac.uk">w.biala@soton.ac.uk</Link>
+      </dd>
+    </div>
+  </dl>
+
+  <div class="lg:hidden">
+    <Link
+      href="https://www.nopatientleftbehind.org/nplb-fellowship"
+      target="_blank"
+      class="mt-6 block text-sm">The NPLB Biotech Fellowship</Link
+    >
+
+    <div id="credits" class="mt-11 flex gap-4">
+      <p class="text-xs">© 2026<br />Biotech Unveiled</p>
+      <p class="text-xs">
+        Designed and developed<br /><Link
+          href="https://trivialno.com"
+          target="_blank">by Trivialno</Link
+        > in 2026
+      </p>
+    </div>
+  </div>
+
+  <div class="mt-10 hidden gap-6 lg:flex">
+    <div id="credits" class="flex gap-4">
+      <p class="text-sm">© 2026 Biotech Unveiled</p>
+      <p class="text-sm">
+        Designed and developed <Link
+          href="https://trivialno.com"
+          target="_blank">by Trivialno</Link
+        > in 2026
+      </p>
+    </div>
+
+    <Link
+      href="https://www.nopatientleftbehind.org/nplb-fellowship"
+      target="_blank"
+      class="ml-auto block">The NPLB Biotech Fellowship</Link
+    >
+  </div>
+</footer>
+
+<style>
+  @reference '../../styles/global.css';
+
+  dt {
+    @apply font-bold;
+    line-height: 135%;
+  }
+
+  dd {
+    line-height: 135%;
+  }
+
+  #credits p {
+    line-height: 125%;
+  }
+</style>

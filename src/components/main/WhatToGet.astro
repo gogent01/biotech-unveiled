@@ -1,9 +1,10 @@
 ---
 import Callout from "../atoms/Callout.astro";
 import nplbFellowshipLogo from "../../assets/logos/nplb-fellowship.png";
+import Link from "../atoms/Link.astro";
 ---
 
-<div
+<section
   class="mx-auto mt-11 max-w-md p-4 lg:mt-28 lg:grid lg:max-w-360 lg:grid-cols-7 lg:gap-x-8 lg:px-15 lg:py-6"
 >
   <h2
@@ -22,11 +23,9 @@ import nplbFellowshipLogo from "../../assets/logos/nplb-fellowship.png";
     </li>
     <li>A reputable certificate of completion from RA Capital</li>
     <li>
-      An opportunity to apply for <a
+      An opportunity to apply for <Link
         href="https://www.nopatientleftbehind.org/nplb-fellowship"
-        target="_blank"
-        class="underline underline-offset-2 transition-colors hover:decoration-transparent"
-        style="text-decoration-thickness: 0.5px">the NPLB Biotech Fellowship</a
+        target="_blank">the NPLB Biotech Fellowship</Link
       > — <em class="text-accent not-italic"
         >the certificate of completion is a prerequisite for enrollment</em
       >
@@ -86,16 +85,14 @@ import nplbFellowshipLogo from "../../assets/logos/nplb-fellowship.png";
         Start learning
       </a>
 
-      <a
+      <Link
         href="https://www.nopatientleftbehind.org/nplb-fellowship"
         target="_blank"
-        class="text-xs underline underline-offset-2 transition-colors hover:decoration-transparent lg:text-base"
-        style="text-decoration-thickness: 0.5px; line-height: 135%;"
-        >NPLB Fellowship website</a
+        class="text-xs lg:text-base">NPLB Fellowship website</Link
       >
     </div>
   </div>
-</div>
+</section>
 
 <style>
   li {

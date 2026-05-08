@@ -1,0 +1,92 @@
+---
+import Callout from "../atoms/Callout.astro";
+import Link from "../atoms/Link.astro";
+---
+
+<section
+  class="mx-auto mt-10 max-w-md p-4 lg:mt-25 lg:grid lg:max-w-360 lg:grid-cols-7 lg:gap-x-8 lg:px-15 lg:py-6"
+>
+  <h2
+    class="font-display text-primary text-xl font-bold lg:col-span-2 lg:text-4xl"
+    style="line-height: 92%"
+  >
+    Q&A
+  </h2>
+
+  <dl class="mt-4 text-pretty lg:col-span-4 lg:mt-0 lg:text-2xl">
+    <dt>
+      1. What is the NPLB Fellowship and how is it connected to the Biotech
+      Unveiled Course?
+    </dt>
+    <dd>
+      The NPLB Fellowship is a  ogical continuation of the Biotech Unveiled
+      Course. Both were launched by RA Capital and NPLB with a mission
+      to prepare future biotech leaders. The Biotech Unveiled course
+      is the first step, and its completion is required to apply
+      for the Fellowship. As a Fellow, you will join the cohort of bright,
+      like-minded individuals from all over the world, gain access
+      to the advanced biotech materials, participate in live sessions with
+      leaders of the biotech industry, get mentorship from them, and work
+      on group projects. Invited guests include key investors, big pharma
+      leaders, health policymakers from the UK, Europe and the US.
+    </dd>
+
+    <dt>2. How long does it take to finish the Course?</dt>
+    <dd>It takes around 1–2 weeks to complete at a relaxed pace.</dd>
+
+    <dt>3. Which markets does this course focus on?</dt>
+    <dd>
+      Practice and examples in this course are focused mainly on US market.
+      However, it will be useful for learners looking to access European market
+      as well. This choice is intentional: Biotech industry is global, and
+      currently the US shapes much of the global biotech playbook. Market
+      mechanics — drug development, investment, pricing debates, company
+      strategies, and what eventually reaches patients — are similar in the US
+      and Europe. The key question — How do we make medicines affordable while
+      keeping them worth developing? — matters to patients everywhere.
+    </dd>
+
+    <dt>4. Who are you and why are you promoting this course?</dt>
+    <dd>
+      We are current NPLB Fellows with diverse backgrounds who firmly believe
+      that the UK has an untapped potential for bringing more biotech
+      innovations to patients' bedsides. For us the Biotech Unveiled Course
+      and NPLB Fellowship became a mind-changing experience — and we would like
+      to bring this experience to our peers across UK academia and industry.
+      We are certain that, equipped with the knowledge the Course
+      and the Fellowship provide, you will be able to bring your ideas to life
+      with a much greater chance of success.
+    </dd>
+
+    <dt>5. I am still uncertain or have questions — who can I talk to?</dt>
+    <dd>
+      You can contact any of us through emails listed in <Link href="#contacts"
+        >the “Contacts” section</Link
+      >
+      — we are always happy to chat and answer any questions you may have!
+    </dd>
+  </dl>
+
+  <Callout class="mt-9 lg:col-span-5 lg:col-start-2 lg:mt-38"
+    >Biotech is not just about discovering medicines. It is about building
+    system where medicines can reach people
+  </Callout>
+</section>
+
+<style>
+  @reference '../../styles/global.css';
+
+  dt {
+    @apply text-primary font-semibold;
+    line-height: 135%;
+  }
+
+  dt:not(:first-of-type) {
+    @apply mt-6 lg:mt-9;
+  }
+
+  dd {
+    @apply mt-2;
+    line-height: 135%;
+  }
+</style>

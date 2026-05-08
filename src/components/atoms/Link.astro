@@ -1,0 +1,27 @@
+---
+interface Props {
+  href: string;
+  target?: string;
+  class?: string;
+}
+
+const { href, class: className, target } = Astro.props;
+---
+
+<a
+  href={href}
+  target={target}
+  class:list={[
+    "underline underline-offset-2 transition-colors hover:decoration-transparent",
+    className,
+  ]}
+>
+  <slot />
+</a>
+
+<style>
+  a {
+    text-decoration-thickness: 0.5px;
+    line-height: 135%;
+  }
+</style>
