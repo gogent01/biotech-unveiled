@@ -8,13 +8,65 @@ import "../styles/global.css";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+
+    <link rel="canonical" href="https://biotechunveiled.co.uk" />
+    <meta name="robots" content="index,follow" />
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
-    <meta name="generator" content={Astro.generator} />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <title>
-      Biotech Unveiled — an Online Course by RA Capital and No Patient Left
-      Behind
+      Biotech Unveiled — Free Online Course on How the Biotech Industry Works
     </title>
+    <meta
+      name="description"
+      content="Free 10-hour online course covering biotech innovation, investment, drug development, market access, and healthcare policy. How to make medicines both profitable and affordable?"
+    />
+
+    <meta property="og:title" content="Biotech Unveiled" />
+    <meta
+      property="og:description"
+      content="Free 10-hour online course covering biotech innovation, investment, drug development, market access, and healthcare policy. How to make medicines both profitable and affordable?"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://biotechunveiled.co.uk" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.racap.com/#organization",
+            "name": "RA Capital",
+            "url": "https://www.racap.com"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.nopatientleftbehind.org/#organization",
+            "name": "No Patient Left Behind",
+            "url": "https://www.nopatientleftbehind.org"
+          },
+          {
+            "@type": "Course",
+            "name": "Biotech Unveiled",
+            "url": "https://biotechunveiled.co.uk",
+            "description": "Free 10-hour online course covering biotech innovation, investment, drug development, market access, and healthcare policy. How to make medicines both profitable and affordable?",
+            "provider": {
+              "@id": "https://www.nopatientleftbehind.org/#organization"
+            },
+            "creator": {
+              "@id": "https://www.racap.com/#organization"
+            }
+          }
+        ]
+      }
+    </script>
+
     <Font cssVariable="--font-inter" />
     <Font cssVariable="--font-ibm" />
   </head>
