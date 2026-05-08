@@ -3,9 +3,10 @@ interface Props {
   href: string;
   target?: string;
   class?: string;
+  dataUmamiEvent?: string;
 }
 
-const { href, class: className, target } = Astro.props;
+const { href, class: className, target, dataUmamiEvent } = Astro.props;
 ---
 
 <a
@@ -15,6 +16,7 @@ const { href, class: className, target } = Astro.props;
     "underline underline-offset-2 transition-colors hover:decoration-transparent",
     className,
   ]}
+  data-umami-event={dataUmamiEvent}
 >
   <slot />
 </a>
