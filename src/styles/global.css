@@ -17,3 +17,7 @@
   --color-accent-mix-2: rgba(105,86,136,1);
   --color-border: rgba(246,245,237,1);
 }
+
+abbr {
+  letter-spacing: 3%;
+}

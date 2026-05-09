@@ -27,8 +27,8 @@ import Partners from "../molecules/Partners.astro";
     </div>
 
     <div
-      class="pointer-events-none absolute top-132 -left-120 hidden lg:block"
-      style="width: 50rem; transform: rotate(-78.07deg) scale(1.3, 1.5); transform-origin: top left;"
+      class="pointer-events-none absolute top-108 -left-132 hidden lg:block"
+      style="width: 50rem; transform: rotate(-78.07deg) scale(1.1, 1.5); transform-origin: top left;"
     >
       <img src={spiralImage.src} alt="" class="w-full" />
     </div>
@@ -45,24 +45,27 @@ import Partners from "../molecules/Partners.astro";
           class="font-display -ml-px text-center leading-tight font-bold text-white"
           style="margin-top: -0.4375rem;"
         >
-          A step to the NPLB Fellowship
+          A step to<br />the <abbr>NPLB</abbr> Fellowship
         </p>
       </a>
 
-      <div
-        class="absolute -top-1 -right-65 hidden items-center justify-center bg-[url(/icons/blob.svg)] bg-contain bg-no-repeat lg:flex"
+      <a
+        href="https://www.nopatientleftbehind.org/nplb-fellowship"
+        target="_blank"
+        class="absolute -top-32 -right-44 hidden items-center justify-center bg-[url(/icons/blob.svg)] bg-contain bg-no-repeat lg:flex"
         style="height: 12.5rem; width: 12.5rem;"
+        data-umami-event="Fellowship Blob"
       >
         <p
           class="font-display -ml-1.5 text-center text-3xl leading-tight font-bold text-white"
           style="margin-top: -1rem;"
         >
-          A step to the NPLB Fellowship
+          A step to<br />the <abbr>NPLB</abbr> Fellowship
         </p>
-      </div>
+      </a>
 
       <h1
-        class="font-display tech-gradient lg:text-10xl mt-38 -ml-px bg-clip-text text-7xl font-bold text-transparent lg:mt-16 lg:-ml-2"
+        class="font-display tech-gradient lg:text-10xl mt-38 -ml-1 bg-clip-text text-7xl font-bold text-transparent lg:mt-42 lg:-ml-2"
         style="line-height: 92%; letter-spacing: -2%;"
       >
         Biotech Unveiled <span class="sr-only"
@@ -72,16 +75,16 @@ import Partners from "../molecules/Partners.astro";
     </div>
 
     <h2
-      class="font-display mt-6 mb-0.5 font-medium lg:mt-10 lg:max-w-138 lg:text-2xl"
+      class="font-display mt-6 mb-0.5 font-medium lg:mt-10 lg:max-w-160 lg:text-2xl"
       style="line-height: 145%;"
     >
-      A free course by RA Capital and No Patient Left Behind about how medicines
-      can be both affordable for patients and profitable to develop
+      A free course by RA Capital and No Patient Left Behind about how medicines
+      can be both affordable for patients and profitable to develop
     </h2>
 
     <a
       href="https://racap.thinkific.com/courses/biotechunveiled?utm_source=BucketChallenge&utm_medium=BucketChallenge&utm_campaign=Team2"
-      class="font-display bg-accent hover:bg-accent-mix-1 mt-3 inline-block rounded px-5 pt-1.5 pb-2 text-xl font-medium text-white transition-colors lg:mt-6 lg:text-3xl"
+      class="font-display bg-accent hover:bg-accent-mix-1 mt-3 inline-block rounded px-5 pt-1.5 pb-2 text-xl font-medium text-white transition-colors lg:mt-6 lg:pb-2.75 lg:text-3xl"
       style="letter-spacing: -0.4%"
       data-umami-event="Course Button"
     >
