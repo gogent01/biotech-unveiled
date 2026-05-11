@@ -6,19 +6,21 @@ interface Props {
 const { class: className } = Astro.props;
 ---
 
-<p
-  class:list={[
-    "font-display text-primary text-center text-sm text-pretty uppercase lg:text-2xl",
-    className,
-  ]}
->
-  <slot />
-</p>
+<div class:list={["flex w-full justify-center", className]}>
+  <p
+    class:list={[
+      "font-display text-primary text-center text-sm text-pretty uppercase lg:text-2xl",
+    ]}
+  >
+    <slot />
+  </p>
+</div>
 
 <style>
   p {
     line-height: 165%;
     letter-spacing: 4%;
+    max-width: 60ch;
   }
 
   @media screen and (min-width: 64rem) {

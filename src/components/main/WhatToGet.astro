@@ -5,17 +5,17 @@ import Link from "../atoms/Link.astro";
 ---
 
 <section
-  class="mx-auto mt-11 max-w-md p-4 lg:mt-28 lg:grid lg:max-w-360 lg:grid-cols-7 lg:gap-x-8 lg:px-15 lg:py-6"
+  class="mx-auto mt-11 max-w-md p-4 sm:grid sm:max-w-360 sm:grid-cols-7 sm:gap-x-8 lg:mt-28 lg:px-15 lg:py-6"
 >
   <h2
-    class="font-display text-primary text-xl font-bold lg:col-span-2 lg:text-4xl"
-    style="line-height: 92%"
+    class="font-display text-primary text-xl font-bold sm:col-span-2 lg:text-4xl"
+    style="line-height: 110%"
   >
-    What will I get?
+    What will I get?
   </h2>
 
   <ul
-    class="mt-4 ml-4 list-outside list-disc list-image-[url(/icons/bullit.svg)] space-y-4 text-pretty lg:col-span-4 lg:mt-2.25 lg:ml-5 lg:list-image-[url(/icons/bullit-large.svg)] lg:space-y-6 lg:text-2xl"
+    class="mt-4 ml-4 list-outside list-disc list-image-[url(/icons/bullit.svg)] space-y-4 text-pretty sm:col-span-4 sm:mt-px lg:mt-2 lg:ml-5 lg:list-image-[url(/icons/bullit-large.svg)] lg:space-y-6 lg:text-2xl"
   >
     <li>
       A solid understanding in how the biotech ecosystem works in the modern
@@ -35,14 +35,14 @@ import Link from "../atoms/Link.astro";
   </ul>
 
   <div
-    class="border-border relative mt-9 rounded-sm border-2 p-5 pr-8 pb-10 lg:col-span-4 lg:col-start-3 lg:mt-25 lg:p-7 lg:pr-16 lg:pb-14"
+    class="border-border relative mt-12 max-w-124 rounded-sm border-2 p-5 pr-8 pb-10 sm:col-span-4 sm:col-start-3 lg:mt-25 lg:max-w-none lg:p-7 lg:pr-16 lg:pb-14"
   >
     <img
       src={nplbFellowshipLogo.src}
       width={nplbFellowshipLogo.width}
       height={nplbFellowshipLogo.height}
       alt="NPLB Fellowship"
-      class="absolute -top-11 -right-3 w-28 lg:-top-17 lg:-right-4 lg:w-44"
+      class="absolute -top-11 -right-4 w-28 lg:-top-17 lg:-right-20 lg:w-44"
     />
 
     <h3
@@ -80,7 +80,7 @@ import Link from "../atoms/Link.astro";
     </ul>
   </div>
 
-  <div class="lg:col-span-3 lg:col-start-3 lg:mt-12">
+  <div class="sm:col-span-5 sm:col-start-2 lg:mt-12">
     <Callout class="mt-10"
       >Fellowship application deadline:<br />26<sup class="lowercase">th</sup
       > of May 2026

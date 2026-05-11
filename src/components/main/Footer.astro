@@ -3,7 +3,7 @@ import Link from "../atoms/Link.astro";
 ---
 
 <footer
-  class="mx-auto mt-10 max-w-md p-4 lg:mt-36 lg:max-w-none lg:px-15 lg:py-6"
+  class="mx-auto mt-10 max-w-md p-4 sm:max-w-none lg:mt-36 lg:px-15 lg:py-6"
 >
   <h2 id="contacts" class="text-sm font-bold lg:text-2xl">Contacts</h2>
 
@@ -48,7 +48,7 @@ import Link from "../atoms/Link.astro";
     </div>
   </dl>
 
-  <div class="lg:hidden">
+  <div class="sm:hidden">
     <Link
       href="https://www.nopatientleftbehind.org/nplb-fellowship"
       target="_blank"
@@ -64,6 +64,26 @@ import Link from "../atoms/Link.astro";
         > in 2026
       </p>
     </div>
+  </div>
+
+  <div class="hidden items-end gap-x-6 sm:flex lg:hidden">
+    <div id="credits" class="mt-11 flex gap-4">
+      <p class="text-xs">© 2026 Biotech Unveiled</p>
+      <p class="text-xs">
+        <span class="inline-block">Designed and developed</span>
+        <span class="inline-block"
+          ><Link href="https://trivialno.com" target="_blank">by Trivialno</Link
+          > in 2026</span
+        >
+      </p>
+    </div>
+
+    <Link
+      href="https://www.nopatientleftbehind.org/nplb-fellowship"
+      target="_blank"
+      class="ml-auto block shrink-0 text-sm"
+      >The <abbr>NPLB</abbr> Biotech Fellowship</Link
+    >
   </div>
 
   <div class="mt-10 hidden gap-6 lg:flex">
