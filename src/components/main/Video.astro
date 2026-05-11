@@ -1,8 +1,21 @@
-<section class="mx-auto mt-16 max-w-md p-4">
-  <h3
-    class="font-display text-sm uppercase"
-    style="line-height: 140%; letter-spacing: 4%;"
-  >
-    Watch 2 minutes video to Learn<br />about your peers’ experience
-  </h3>
+---
+import Callout from "../atoms/Callout.astro";
+---
+
+<section
+  class="mx-auto mt-1 max-w-md p-4 sm:mt-8 sm:grid sm:max-w-360 sm:grid-cols-7 sm:gap-8 lg:px-15 lg:py-6"
+>
+  <Callout class="sm:col-span-5 sm:col-start-2">
+    Watch a 2-minute video to learn<br />about your peers’ experiences
+  </Callout>
+
+  <div class="mt-5 sm:col-span-5 sm:col-start-2 sm:mt-2">
+    <iframe
+      src="https://www.youtube.com/embed/TBGCWFxu1lU"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+      class="aspect-video h-full w-full"></iframe>
+  </div>
 </section>
