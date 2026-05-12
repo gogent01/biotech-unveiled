@@ -2,26 +2,27 @@
 import spiralImage from "../../assets/spiral.svg";
 ---
 
-<div class="tech-gradient relative mt-4 overflow-hidden lg:mt-16">
+<div class="tech-gradient mt-4 overflow-hidden lg:mt-16">
   <div
-    class="pointer-events-none absolute -top-76 -left-200 mix-blend-color-dodge lg:-left-180 lg:block"
-    style="width: 40rem; transform: rotate(-64.07deg) scale(0.9, 1); transform-origin: top left;"
-  >
-    <img src={spiralImage.src} alt="" class="w-full -scale-100" />
-  </div>
-
-  <div
-    class="relative mx-auto max-w-md p-4 pt-8 pb-12 text-pretty text-white sm:grid sm:max-w-360 sm:grid-cols-7 sm:gap-x-8 lg:px-16 lg:py-14 lg:pb-22"
+    class="mx-auto max-w-md p-4 pt-8 pb-12 text-pretty text-white sm:grid sm:max-w-360 sm:grid-cols-7 sm:gap-x-8 lg:px-16 lg:py-14 lg:pb-22"
   >
     <div
       class="max-w-102 sm:col-span-6 sm:col-start-1 lg:col-span-3 lg:col-start-3 lg:-mx-0.5 lg:max-w-none"
     >
-      <h2
-        class="font-display pb-14 text-3xl font-bold lg:pb-32 lg:text-5xl"
-        style="line-height: 110%; letter-spacing: -2%;"
-      >
-        Ready to understand biotech as a system?
-      </h2>
+      <div class="relative">
+        <div
+          class="pointer-events-none absolute -top-36 -left-180 mix-blend-color-dodge lg:-top-32 lg:-left-300 lg:block xl:-top-48 xl:-left-300"
+          style="width: 40rem; transform: rotate(-64deg) scale(0.9, 1) translateY(-25%); transform-origin: top left;"
+        >
+          <img src={spiralImage.src} alt="" class="w-full -scale-100" />
+        </div>
+        <h2
+          class="font-display pb-14 text-3xl font-bold lg:max-w-min lg:pb-32 lg:text-5xl xl:max-w-none"
+          style="line-height: 110%; letter-spacing: -2%;"
+        >
+          Ready to understand biotech as a system?
+        </h2>
+      </div>
 
       <h3>Step 1</h3>
       <p>Take the free course.</p>

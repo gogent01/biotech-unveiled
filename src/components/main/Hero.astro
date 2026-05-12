@@ -8,36 +8,15 @@ import certificateIcon from "../../assets/icons/certificate.svg";
 import Partners from "../molecules/Partners.astro";
 ---
 
-<section class="relative overflow-hidden">
-  <div
-    class="mx-auto max-w-md overflow-y-hidden p-4 sm:max-w-360 lg:px-16 lg:py-6 lg:pb-28"
-  >
+<section class="relative z-0">
+  <div class="mx-auto max-w-md p-4 sm:max-w-360 lg:px-16 lg:py-6 lg:pb-28">
     <Partners />
-
-    <div
-      class="pointer-events-none absolute top-46 -left-24 lg:hidden"
-      style="width: 18.5rem; transform: rotate(-70.07deg); transform-origin: top left;"
-    >
-      <img
-        src={spiralImage.src}
-        width={spiralImage.width}
-        height={spiralImage.height}
-        alt=""
-      />
-    </div>
-
-    <div
-      class="pointer-events-none absolute top-108 -left-132 hidden lg:block"
-      style="width: 50rem; transform: rotate(-78.07deg) scale(1.1, 1.5); transform-origin: top left;"
-    >
-      <img src={spiralImage.src} alt="" class="w-full" />
-    </div>
 
     <div class="relative max-w-min">
       <a
         href="https://www.nopatientleftbehind.org/nplb-fellowship"
         target="_blank"
-        class="absolute -top-24 -right-9 flex items-center justify-center bg-[url(/icons/blob.svg)] bg-contain bg-no-repeat lg:hidden"
+        class="absolute -top-24 -right-9 flex items-center justify-center bg-[url(/icons/blob.svg)] bg-contain bg-no-repeat sm:-right-18 lg:hidden"
         style="height: 6.25rem; width: 6.25rem;"
         data-umami-event="Fellowship Blob"
       >
@@ -64,14 +43,37 @@ import Partners from "../molecules/Partners.astro";
         </p>
       </a>
 
-      <h1
-        class="font-display tech-gradient lg:text-10xl mt-38 -ml-1 bg-clip-text text-7xl font-bold text-transparent lg:mt-42 lg:-ml-2"
-        style="line-height: 92%; letter-spacing: -2%;"
-      >
-        Biotech Unveiled <span class="sr-only"
-          >— Free Online Course on How the Biotech Industry Works</span
+      <div class="relative">
+        <div
+          class="pointer-events-none absolute top-0 -left-58 -z-10 sm:hidden"
+          style="width: 18.5rem; transform: rotate(-70.07deg) scale(1.1, 1.3) translateY(-31%); transform-origin: top left;"
         >
-      </h1>
+          <img src={spiralImage.src} alt="" />
+        </div>
+
+        <div
+          class="pointer-events-none absolute top-20 -left-84 -z-10 hidden sm:block lg:hidden"
+          style="transform: rotate(-75.07deg) scale(1.5, 1.6) translateY(-31%); transform-origin: top left;"
+        >
+          <img src={spiralImage.src} alt="" />
+        </div>
+
+        <div
+          class="pointer-events-none absolute top-27 -left-120 -z-10 hidden lg:block"
+          style="transform: rotate(-72.07deg) scale(2.5, 3.1) translateY(-31%); transform-origin: top left;"
+        >
+          <img src={spiralImage.src} alt="" />
+        </div>
+
+        <h1
+          class="font-display tech-gradient lg:text-10xl mt-38 -ml-1 bg-clip-text text-7xl font-bold text-transparent lg:mt-46 lg:-ml-2"
+          style="line-height: 92%; letter-spacing: -2%;"
+        >
+          Biotech Unveiled <span class="sr-only"
+            >— Free Online Course on How the Biotech Industry Works</span
+          >
+        </h1>
+      </div>
     </div>
 
     <h2
