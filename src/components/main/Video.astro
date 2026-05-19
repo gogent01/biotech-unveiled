@@ -1,5 +1,6 @@
 ---
 import Callout from "../atoms/Callout.astro";
+import Accordion from "../atoms/Accordion.tsx";
 ---
 
 <section
@@ -18,4 +19,65 @@ import Callout from "../atoms/Callout.astro";
       allowfullscreen
       class="aspect-video h-full w-full"></iframe>
   </div>
+
+  <div class="mt-4 sm:col-span-5 sm:col-start-2 sm:mt-6">
+    <Accordion
+      openingTitle="Read the transcript"
+      closingTitle="Hide the transcript"
+      client:load
+    >
+      <div
+        class="mt-4 space-y-3 text-pretty sm:col-span-4 sm:mt-px lg:mt-2 lg:space-y-6 lg:text-2xl"
+      >
+        <p>
+          <strong>Daur, University of Oxford</strong> I am a medical oncologist and DPhil
+          student working on tumor avatars and translational cancer research. I finished
+          the course in one week and honestly, it changed my perspective. and let
+          biotech become unveiled for you as well. Good luck!
+        </p>
+        <p>
+          <strong>Zohar, University College London</strong> I'm a PhD student at UCL
+          studying molecular epidemiology and I really resonated with the mission
+          of trying to make sure that we can incentivize innovation in the health
+          space while also ensuring that everybody has access to medicines. It doesn't
+          take that long, so go sign up.
+        </p>
+        <p>
+          <strong>Yushi, University of Oxford</strong> I'm doing a PhD in molecular
+          and cellular biology at the University of Oxford. This course connects science
+          and the business of drug development with the realities of the US healthcare
+          system, particularly insurance reimbursement and how treatments are usually
+          paid for, which I wasn't really aware of in the past.
+        </p>
+        <p>
+          <strong>Celine, Imperial College London</strong> I'm currently working at a healthcare
+          and life sciences consulting firm in London. I came across the Biotech Unveiled
+          through one of Peter Kolchinsky's posts, where he introduces the course
+          as a gateway to an extensive fellowship program run directly by Peter himself
+          and the No Patient Left Behind team. I recommend this to anyone who is curious
+          or interested in the biotech industry in general.
+        </p>
+        <p>
+          <strong>Weronika, University of Southampton</strong> Hi, I'm Weronika and I'm
+          currently doing my PhD in cancer research. It really breaks down how drugs
+          can actually reach patients. So from development and investment to policy,
+          drug pricing, and insurance. It's really insightful, easy to follow, and really
+          changes how you think about impact.
+        </p>
+      </div>
+    </Accordion>
+  </div>
 </section>
+
+<style>
+  @reference '../../styles/global.css';
+
+  p {
+    @apply text-pretty;
+    line-height: 138%;
+  }
+
+  strong {
+    @apply block font-semibold;
+  }
+</style>
