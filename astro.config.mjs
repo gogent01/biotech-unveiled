@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig, fontProviders } from "astro/config";
+import { defineConfig, envField, fontProviders } from "astro/config";
 
 import preact from "@astrojs/preact";
 
@@ -28,4 +28,17 @@ export default defineConfig({
       weights: [400, 600, 700],
     },
   ],
+  env: {
+    schema: {
+      PUBLIC_COURSE_DEADLINE: envField.string({
+        context: "client",
+        access: "public",
+        optional: true,
+      }),
+      PUBLIC_UMAMI_WEBSITE_ID: envField.string({
+        context: "client",
+        access: "public",
+      }),
+    },
+  },
 });

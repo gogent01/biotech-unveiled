@@ -2,6 +2,12 @@
 import Callout from "../atoms/Callout.astro";
 import nplbFellowshipLogo from "../../assets/logos/nplb-fellowship.png";
 import Link from "../atoms/Link.astro";
+import { PUBLIC_COURSE_DEADLINE } from "astro:env/client";
+import {
+  isValidDateString,
+  toLongMonthDayYear,
+  toShortMonthDay,
+} from "../../utils";
 ---
 
 <section
@@ -82,8 +88,22 @@ import Link from "../atoms/Link.astro";
 
   <div class="sm:col-span-5 sm:col-start-2 lg:mt-12">
     <Callout class="mt-10"
-      >Fellowship application deadline:<br />26<sup class="lowercase">th</sup
-      > of May 2026
+      >{
+        isValidDateString(PUBLIC_COURSE_DEADLINE) ? (
+          <span>
+            Fellowship application deadline:
+            <br />
+            {toLongMonthDayYear(
+              new Date(PUBLIC_COURSE_DEADLINE.trim()),
+            ).replaceAll(" ", " ")}
+          </span>
+        ) : (
+          <span>
+            Fellowship cohorts launch twice a year — complete the course now
+            and be ready when the next application cycle opens
+          </span>
+        )
+      }
     </Callout>
 
     <div class="mt-3 flex w-full flex-col items-center gap-4 lg:mt-2 lg:gap-5">

@@ -1,6 +1,7 @@
 ---
 import { Font } from "astro:assets";
 import "../styles/global.css";
+import { PUBLIC_UMAMI_WEBSITE_ID } from "astro:env/client";
 ---
 
 <!doctype html>
@@ -79,7 +80,7 @@ import "../styles/global.css";
     <script
       defer
       src="https://cloud.umami.is/script.js"
-      data-website-id="fa375924-5bf1-47f1-8c42-d939f0da5682"></script>
+      data-website-id={PUBLIC_UMAMI_WEBSITE_ID}></script>
   </head>
   <body class="overflow-x-hidden">
     <slot />

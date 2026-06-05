@@ -1,5 +1,7 @@
 ---
 import spiralImage from "../../assets/spiral.svg";
+import { PUBLIC_COURSE_DEADLINE } from "astro:env/client";
+import { isValidDateString, toShortMonthDay } from "../../utils";
 ---
 
 <div class="tech-gradient mt-4 overflow-hidden lg:mt-16">
@@ -32,9 +34,15 @@ import spiralImage from "../../assets/spiral.svg";
 
       <h3>Step 3</h3>
       <p>
-        Use it as your bridge to the <abbr>NPLB</abbr> Biotech Fellowship. <em
-          class="text-accent-light not-italic">Application deadline: May 26</em
-        >
+        Use it as your bridge to the <abbr>NPLB</abbr> Biotech Fellowship. {
+          isValidDateString(PUBLIC_COURSE_DEADLINE) && (
+            <em class="text-accent-light not-italic">
+              {`Application deadline: ${toShortMonthDay(
+                new Date(PUBLIC_COURSE_DEADLINE),
+              )}`.replaceAll(" ", " ")}
+            </em>
+          )
+        }
       </p>
 
       <a
